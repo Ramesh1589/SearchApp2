@@ -1,0 +1,44 @@
+
+
+<div class="col-sm-9">
+            <div class="panel panel-primary">
+                <div class ="panel-heading">
+                    <div class="panel-title">Juice Center </div>    
+                </div>
+                <div class="panel panel-body" ng-controller="juicecenterCtrl" >  
+
+
+                     <div ng-repeat="jc in juicecenter|filter:search|limitTo:jcCount">       
+                          
+                         <div class = "thumbnail">
+                                    <h4 ng-model="title">{{ jc.title }}</h4>
+                                    <!--<p><strong>Designatiom:</strong>{{ hk.designation }}</p>
+                                     <p><strong >Skill:</strong>{{ hk.skills }}</p>
+                                     <p><strong>Salary:</strong>{{ hk.salary }}</p>
+                                     <p><strong>Address:</strong>{{ hk.address   }}</p>-->
+                                     <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(jc)" style="margin-bottom: 20px ">View Details</button>
+
+                         </div>                           
+                                                 
+                     </div>     
+                     <div class="row">
+                       <th>
+                         <button ng-click="showMore()" class="btn btn-warning" style="text-align: center;">Show More</button>
+                       </th>
+                     </div>   
+
+                </div>                                 
+             </div>                                    
+                                         
+                            
+ </div>                             
+                                                 
+                        
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+    

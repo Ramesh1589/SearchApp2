@@ -1,0 +1,36 @@
+
+/*Image zoom csss*/
+.thumbnail{
+	overflow: hidden;
+}
+
+img{
+      -webkit-transition:all 0.8s ease;
+}
+
+img:hover{
+      transform: scale(1.3);
+}
+
+/*End of Animation */
+
+/*courosel slider*/
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      height: 40%;
+      margin: auto;
+            background-color: transparent;
+                min-width: 100%;
+}
+  }
+
+ .left carousel-control{
+  padding-left: -25px;
+  padding-right: -24px;
+  }
+
+/*Login form*/
+
+   

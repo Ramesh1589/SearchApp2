@@ -1,0 +1,68 @@
+{"tourism":[
+              {       
+                       "image":"torist-1",
+                      "name":"Sidhhivinay Ganapati",            
+                      "address":"1245 Kothrud Pune",
+                      "descriptiob":"Excellent place ,really nice view"
+              },
+
+                  {
+                      "image":"torist-2", 
+                      "name":"Chatrashrungi Devi",
+                      "address":"1245 Kothrud Pune",
+                       "descriptiob":"Excellent place ,really nice view"
+              },
+                {       
+                       "image":"torist-3",
+                      "name":"Sinhagad Port",
+                      
+                      "address":"Sinhagad Pune",
+                      "descriptiob":"Excellent place ,really nice view"
+              },
+
+                  {
+                      "image":"torist-4", 
+                      "name":"Khadakawasala Damp",
+                      "address":" Kadakawasala Pune",
+                      "descriptiob":"Excellent place ,really nice view"
+              },
+
+                 
+              
+                  {
+                       
+                      "image":"torist-4",
+                      "name":"Shaniwar Wada",
+                      "address":"Pune",
+                      "descriptiob":"Excellent place ,really nice view"
+              },
+               {
+                      "image":"torist-5",              
+                      "name":"Rajiv Gandhi Udyaan",
+                      "address":"Katraj Pune",
+                     "descriptiob":"Excellent place ,really nice view"
+              },
+
+                  {
+                      "image":"torist-6",
+                      "name":"Lal Mahal",
+                      "address":"Pune",
+                   "descriptiob":"Excellent place ,really nice view"
+              },
+
+                  {
+                    "image":"torist-7"
+                      "name":"MCA Internation Cricket Stadium",
+                      "address":"1245 Kothrud Pune",
+                   "descriptiob":"Excellent place ,really nice view"
+              },
+                  {
+                      "image":"crib-2",
+                      "name":"Magarpatta City",
+                      "address":"Hadapasar Pune",
+                      "descriptiob":"Excellent place ,really nice view"
+              }
+
+
+  ]
+   } 

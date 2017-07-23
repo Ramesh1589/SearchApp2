@@ -1,0 +1,171 @@
+/*
+  Search Engine
+  Author: Ramesh Rathod
+  Version:0.0.1
+
+*/
+/* BASE - Base styles, variables, mixins, etc..*/
+/* Font Colors */
+/*Base Background Color*/
+/* Mixin */
+h1, h2, h3, h4, h5 {
+  margin-top: 0px;
+}
+
+.page-header {
+  margin-top: 30px;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #1a2f2e !important;
+}
+
+.clearfix {
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+  background-color: #e4eef2 !important;
+}
+
+a {
+  color: #2b5464;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* MODULES - Individual site components */
+/*  Panel CSS */
+.panel {
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+  border-color: #234154 !important;
+}
+
+.panel-heading, .panel-title {
+  background: #234154 !important;
+  color: #e8491d !important;
+  font-size: 18px !important;
+  font-weight: 700;
+  border-radius: 0px;
+  padding-left: 30px;
+  height: 60px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+}
+
+.panel-body {
+  background: #e3e4e5 !important;
+  order-radius: 0px;
+  width: 100%;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+  height: auto;
+  margin-bottom: 0px !important;
+}
+
+/*.. Thumbnail CSS ..*/
+.thumbnail {
+  background-color: #e4eef2 !important;
+  margin-left: 50px;
+  margin-right: 50px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  display: block;
+}
+
+.thumbnail h4 {
+  padding-left: 30px;
+  font-weight: bold;
+  color: #e8491d !important;
+}
+
+.thumbnail p {
+  padding-left: 30px;
+  font-weight: bold;
+  color: #263238 !important;
+}
+
+.thumbnail #btn {
+  float: right;
+}
+
+/* Layouts  - Pagelayout style*/
+/*Navbar */
+.navbar {
+  width: auto;
+  border-color: #2b5464;
+  height: 60px;
+  background: #2b5464 !important;
+  border-bottom: #e8491d 4px solid !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: auto;
+}
+
+.navbar a {
+  font-weight: bold;
+  color: #eceff1 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  padding-top: 20px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #234154 !important;
+  color: #e8491d !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #234154 !important;
+  color: #e8491d !important;
+}
+
+.navbar-brand h4 {
+  font-weight: bold;
+  font-size: 25px !important;
+  padding-left: 10px;
+  line-height: 1.1;
+  margin-top: -5px;
+}
+
+.highlights {
+  color: #e8491d !important;
+}

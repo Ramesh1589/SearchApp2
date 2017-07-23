@@ -1,0 +1,99 @@
+<div class="container" >
+
+      <form class="form-inline well well-sm clearfix">
+          <div clas="row">
+              <div class="col-sm-4">
+           <h4 ><span class="label label-warning">AKOLA</span></h4>
+            </div>
+            <div class="col-sm-8">
+            <input type="text" style="width: 80%" placeholder="Search..." class="form-control" ng-model="search">
+             </div>
+          </div>
+      </form>
+      <div class="row">
+        <!-- Side Menu Bar Start -->
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+               <div class="panel-heading">
+                  <div class="panel-title">Categories</div>
+               </div>
+               <div class="panel-body">
+                  <div class="nav nav-pills nav-stacked">
+
+
+                      <li><a ui-sref=".engineeringjob" ui-sref-active="active">Enginnering Jobs</a></li>
+                      <li><a ui-sref=".civiljob">Civil Job</a></li>
+                      <li><a ui-sref=".teacherjob" >Teacher Job</a></li>
+                      <li><a ui-sref=".bpojobs" >BPO/KPO</a></li>
+                      <li><a ui-sref=".marketingjobs">Marketing Jobs</a></li>
+                      <li><a ui-sref=".deliveryboy">Delivery Boy</a></li>
+                      <li><a ui-sref=".housekeeping">House Keeping</a></li>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+          <div ui-view>
+     <div class="col-md-9">
+            <div class="panel panel-primary">
+                <div class ="panel-heading">
+                    <div class="panel-title">Jobs</div>
+                </div>
+                <div class="panel panel-body" >
+
+                      <div class="col-md-12"  ng-repeat="jb in jobs| filter:search">
+
+                          <div class = "thumbnail">
+
+                             <!-- <img ng-src="app/images/jobs/{{jb.image}}.jpg" width="100%" height="">
+-->
+
+
+                                   <div class="caption">
+
+                                         <h4 ng-model="title">{{ jb.title }}</h4>
+                                        <p><strong>Designation:</strong>{{ jb.designation }}</p>
+                                         <p><strong >Description:</strong>{{ jb.skills }}</p>
+                                         <p><strong>Address:</strong>{{ jb.address }}</p> <hr></hr>
+
+                                    <div class="clearfix">
+                                         <button type="button" class="btn btn-info btn-xs pull-right"
+                                                 data-toggle="modal" data-target="#info" ng-click="getDetails(jb)" >View Details</button>
+                                  </div>
+                              </div>
+
+
+                          </div>
+                    </div>
+              </div>
+
+        </div>
+
+     </div>
+      <!-- Modal -->
+         <div class="modal fade" id="info" role="dialog">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{detail.title}}</h4>
+              </div>
+              <div class="modal-body">
+                  <img ng-src="app/images/jobs/{{detail.image}}.jpg" class="img-responsive" width="570px" height="300px" alt="">
+                         <div class="caption">
+                             <h3></h3>
+                             <p><strong>Designation:</strong>{{ detail.designatio}}</p>
+                             <p><strong>Description:</strong>{{detail.description }}</p>
+                             <p><strong>Address:</strong>{{ detail.address}}</p>
+
+                          </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of Modal-->
+</div>

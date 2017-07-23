@@ -1,0 +1,29 @@
+
+<div class="col-md-9">
+            <div class="panel panel-primary">
+                <div class ="panel-heading">
+                    <div class="panel-title"> Engineering Jobs</div>
+                </div>
+                <div class="panel panel-body" ng-controller="engineeringCtrl" >
+
+
+                     <div ng-repeat="eng in engineeringjobs|filter:search|limitTo:engCount">
+
+                         <div class = "thumbnail">
+                                    <h4 ng-model="title">{{ eng.title }}</h4>
+                                    <p><strong>Designatiom:</strong>{{ eng.designation }}</p>
+                                     <p><strong >Skill:</strong>{{ eng.skills }}</p>
+                                     <p><strong>Salary:</strong>{{ eng.salary }}</p>
+                                     <p><strong>Address:</strong>{{ eng.address   }}</p><hr></hr>
+                                     <div class="clearfix">
+                                          <button type="button" class="btn btn-info btn-xs pull-right"
+                                                   data-toggle="modal" data-target="#info" ng-click="getDetails(eng)">View Details</button>
+                                    </div>
+                                </div>    
+                        </div>
+                     <div class="clearfix">
+                         <button ng-click="showMore()" class="btn btn-warning pull-right" >Show More</button>
+                   </div>
+              </div>
+       </div>
+ </div>
